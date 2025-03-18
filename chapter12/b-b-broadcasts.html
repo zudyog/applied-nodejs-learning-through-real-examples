@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Real-Time Stock Tracker</title>
+    <script>
+        var ws = new WebSocket('ws://localhost:8080');
+        ws.onmessage = function (event) {
+            var stock = JSON.parse(event.data);
+            document.getElementById('stockPrice').innerText = stock.stock + ': $' + stock.price;
+        };
+    </script>
+</head>
+
+<body>
+    <h1>Live Stock Price</h1>
+    <div id="stockPrice">Waiting for updates...</div>
+</body>
+
+</html>
