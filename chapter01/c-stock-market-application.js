@@ -1,5 +1,6 @@
 const https = require('https');
 // Function to fetch stock price
+
 function fetchStockPrice(stockSymbol) {
     const url = `https://api.example.com/stock/${stockSymbol}/price`;
     https.get(url, (res) => {
@@ -18,6 +19,7 @@ function fetchStockPrice(stockSymbol) {
 }
 // Example stock symbols
 const stocks = ['AAPL', 'GOOGL', 'MSFT'];
+
 stocks.forEach(stock => {
     fetchStockPrice(stock);
 });
