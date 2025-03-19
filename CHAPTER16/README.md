@@ -1,4 +1,5 @@
 # CHAPTER 16 - Exploring Asynchronous Programming
+
 1. Exploring Asynchronous Programming in JavaScript and Its Importance
     - Understanding Asynchronous Programming
     - Why is Asynchronous Programming Important?
